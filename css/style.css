@@ -1,0 +1,370 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Header styling */
+header {
+    background-color: #ffccff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    margin-left: 30px;
+    height: 100px;
+}
+
+header h1 {
+    color: #ff69b4;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff69b4;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-bar {
+    display: flex;
+    border: 1px solid #ff69b4;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    padding: 5px;
+    width: 150px;
+}
+
+.search-bar button {
+    background-color: #ff69b4;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.icons a {
+    color: #ff69b4;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.icons a:hover {
+    color: #333;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffe6ff;
+    min-width: 160px;
+    right: 0; /* Ensures the dropdown aligns to the right side of the container */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #ff69b4;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffccff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main section styling */
+.hero, .about, .products, .contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero {
+    background-color: #ffe6ff;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+.about, .products, .contact {
+    background-color: #ffccff;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ff69b4;
+}
+
+p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.button1 {
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Product grid styling */
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #ffe6ff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    color: #ff69b4;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+/* Footer styling */
+footer {
+    background-color: #ffccff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #ff69b4;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #333;
+}
+/* about us */
+.about-us {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffccff;
+    background-image: linear-gradient(to right, #ffccff, #ffe6ff);
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+    color: #ff69b4;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.about-us p {
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 18px;
+}
+
+.company-history, .mission-statement {
+    margin-bottom: 40px;
+}
+
+.company-history h3, .mission-statement h3 {
+    margin-bottom: 10px;
+    color: #ff69b4;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #ffe6ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    max-width: 300px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.team-member h3 {
+    margin-bottom: 5px;
+    color: #ff69b4;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.team-member p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #ffd1ff;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+.team-member::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transition: left 0.5s;
+}
+
+.team-member:hover::before {
+    left: 100%;
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .product-grid {
+        flex-direction: column;
+    }
+
+    .search-bar input {
+        width: 100px;
+    }
+
+    .dropdown-content {
+        right: auto; /* Ensures the dropdown aligns to the right side of the container */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .team {
+        flex-direction: column;
+    }
+}
